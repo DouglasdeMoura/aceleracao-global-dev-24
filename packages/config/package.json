@@ -20,6 +20,11 @@
     "prettier": "^2.6.1"
   },
   "peerDependencies": {
-    "eslint": "latest"
+    "eslint": "latest",
+    "jest": "latest",
+    "jest-watch-typeahead": "latest",
+    "@swc/jest": "latest",
+    "@swc/core": "latest",
+    "identity-obj-proxy": "latest"
   }
 }
