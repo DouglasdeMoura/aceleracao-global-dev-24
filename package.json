@@ -27,6 +27,11 @@
   },
   "packageManager": "yarn@1.22.10",
   "lint-staged": {
-    "apps/**/*.{json,js,jsx,ts,tsx,md}": "eslint --cache --fix"
+    "apps/**/*.{json,js,jsx,ts,tsx,md}": [
+      "eslint --cache --fix"
+    ],
+    "packages/**/*.{json,js,jsx,ts,tsx,md}": [
+      "eslint --cache --fix"
+    ]
   }
 }
