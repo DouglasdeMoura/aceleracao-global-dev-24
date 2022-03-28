@@ -1,5 +1,5 @@
 {
-  "name": "turborepo-basic-shared",
+  "name": "aceleracao-global-dev-24",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
@@ -17,8 +17,8 @@
     "turbo": "latest"
   },
   "engines": {
-    "npm": ">=7.0.0",
-    "node": ">=14.0.0"
+    "npm": ">=8.5.5",
+    "node": ">=16.13.0"
   },
   "packageManager": "yarn@1.22.10"
 }
