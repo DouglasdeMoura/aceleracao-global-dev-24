@@ -10,9 +10,12 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "husky": ">=6",
+    "lint-staged": ">=10",
     "prettier": "^2.5.1",
     "turbo": "latest"
   },
@@ -20,5 +23,8 @@
     "npm": ">=8.5.5",
     "node": ">=16.13.0"
   },
-  "packageManager": "yarn@1.22.10"
+  "packageManager": "yarn@1.22.10",
+  "lint-staged": {
+    "*.{ts,tsx,md}": "prettier --write"
+  }
 }
