@@ -10,7 +10,9 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.3",
@@ -27,10 +29,14 @@
   "packageManager": "yarn@1.22.10",
   "lint-staged": {
     "apps/**/*.{json,js,jsx,ts,tsx,md}": [
-      "eslint --cache --fix"
-    ],
-    "packages/**/*.{json,js,jsx,ts,tsx,md}": [
-      "eslint --cache --fix"
+      "eslint --cache --fix",
+      "jest --config apps/web/jest.config.js --findRelatedTests --bail"
     ]
+  },
+  "dependencies": {
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/react": "^6.4.19"
   }
 }
