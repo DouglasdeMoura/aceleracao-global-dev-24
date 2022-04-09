@@ -28,7 +28,7 @@
   },
   "packageManager": "yarn@1.22.10",
   "lint-staged": {
-    "apps/**/*.{json,js,jsx,ts,tsx,md}": [
+    "apps/web/*.{json,js,jsx,ts,tsx,md}": [
       "eslint --cache --fix",
       "jest --config apps/web/jest.config.js --findRelatedTests --bail"
     ]
